@@ -1,0 +1,11 @@
+【プロニート ラグドール】投稿手順（2026-09-09）
+
+■ Instagram（本命。音源が乗るのはここだけ）
+1. 元リール https://www.instagram.com/reel/DctEMROzojj/ を開き「音源を使用」→ オリジナル音源 - niko_scofield
+2. reel_ragdoll_proneet.mp4（無音・33.2秒）を選ぶ。音源は頭から・トリムなし。動画の音量は0でよい（無音）
+3. キャプション: 02_IG投稿案/captions/proneet_ragdoll.txt
+4. 投稿直後に最初のコメント: 02_IG投稿案/captions/proneet_ragdoll_first_comment.txt
+※ reel_ragdoll_proneet_preview.mp4 は同期確認用（元音声入り）。投稿には使わない
+
+■ TikTok
+- 06_TikTok/2026-09-10_proneet_ragdoll.txt のとおり。アプリ内の音源で
