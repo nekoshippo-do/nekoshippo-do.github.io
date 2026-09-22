@@ -62,6 +62,9 @@ h2{font-size:22px;margin-bottom:6px}
 .utsushie .cta{display:inline-block;width:auto;padding:9px 18px}
 footer{border-top:1px solid var(--line);padding-top:16px;font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 18px}
 footer a{color:var(--muted)}
+/* 猫種ごとの直リンク（#golden・#p-golden）で開いたカードに印を付ける。コメント返信で「この色できました」と渡す用（2026-09-23） */
+.card{scroll-margin-top:16px}
+.card.hit{outline:2px solid var(--new);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
 </head>
@@ -331,7 +334,7 @@ footer a{color:var(--muted)}
     <a href="terms.html">利用規約</a>
     <a href="privacy.html">プライバシー</a>
     <span>(C) nekoshippo-do</span>
-    <span>更新 2026-09-12</span>
+    <span>更新 2026-09-23</span>
   </footer>
 </div>
 <script>
@@ -350,6 +353,15 @@ document.addEventListener('click',function(e){
     box.scrollIntoView({behavior:'smooth',block:'start'});
   }
 });
+(function(){
+  var h=decodeURIComponent(location.hash.slice(1)); if(!h) return;
+  var el=document.getElementById('p-'+h)||document.getElementById(h);
+  if(!el||!el.classList.contains('card')) return;
+  el.classList.add('hit');
+  // 上の絵が読み込まれると位置がずれるので、読み込み後にもう一度合わせる。枠線が切れないよう16px空ける
+  var go=function(){window.scrollTo(0,el.getBoundingClientRect().top+window.scrollY-16);};
+  go(); window.addEventListener('load',go);
+})();
 </script>
 </body>
 </html>
