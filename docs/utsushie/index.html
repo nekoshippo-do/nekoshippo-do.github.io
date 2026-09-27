@@ -51,7 +51,7 @@ p+p{margin-top:12px}
 .note{font-size:13px;color:var(--muted);margin-top:14px}
 
 /* LINEのトーク画面（動くスタンプを本物の大きさで） */
-.talk{background:var(--talk);border-radius:34px;padding:18px 16px 22px;box-shadow:0 18px 40px rgba(52,48,42,.18);
+.talk{background:var(--talk);border-radius:34px;padding:18px 16px 72px;box-shadow:0 18px 40px rgba(52,48,42,.18);
   border:10px solid #fff;max-width:380px;margin-left:auto;position:relative}
 .talk .bar{color:#fff;font-size:13px;text-align:center;margin-bottom:12px;opacity:.9}
 .msg{display:flex;gap:8px;align-items:flex-end;margin:10px 0}
@@ -60,7 +60,7 @@ p+p{margin-top:12px}
 .me .bubble{background:#8DE055}
 .stamp{width:150px;height:auto}
 .avatar{width:34px;height:34px;border-radius:50%;background:#fff url(assets/main.webp) center/120% no-repeat;flex:none}
-.tag{position:absolute;left:-18px;bottom:26px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 12px;
+.tag{position:absolute;left:-18px;bottom:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 12px;
   font-family:"Klee One",serif;font-size:13px;transform:rotate(-4deg);box-shadow:0 4px 10px rgba(0,0,0,.06)}
 
 /* 3つのコマ：写真 → 似顔絵 → 動くスタンプ */
@@ -164,13 +164,13 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 0 90px}
       </a>
       <p class="note">受付開始とモニター募集は、公式LINEで最初にお知らせします。</p>
     </div>
-    <div class="talk" aria-label="LINEのトーク画面で動くスタンプを使っている様子（見本：ねこしっぽ堂のパステル三毛）">
+    <div class="talk" aria-label="LINEのトーク画面で動くスタンプを使っている様子（見本：テスターさんの長毛の三毛）">
       <div class="bar">トーク</div>
       <div class="msg"><span class="avatar"></span><div class="bubble">今日なにしてた？</div></div>
       <div class="msg me"><img class="stamp" src="assets/s06.webp" alt="見本の動くスタンプ"></div>
       <div class="msg"><span class="avatar"></span><div class="bubble">その子、そっくり！</div></div>
       <div class="msg me"><img class="stamp" src="assets/s14.webp" alt="見本の動くスタンプ"></div>
-      <span class="tag">見本：パステル三毛</span>
+      <span class="tag">見本：テスターさんの子</span>
     </div>
   </div>
 </section>
@@ -183,7 +183,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 0 90px}
     <div class="frames">
       <div class="frame"><div class="pic photo" aria-hidden="true"><svg viewBox="0 0 48 40" width="56" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M6 12h9l3-5h12l3 5h9v22H6z"/><circle cx="24" cy="23" r="7"/></svg></div><b>お写真</b><small>正面・横・全身の3枚以上</small></div>
       <svg class="arrow" viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 10c10-6 20 6 34 0M30 4l6 6-6 6"/></svg>
-      <div class="frame"><div class="pic"><img src="assets/main.webp" alt="似顔絵の見本"></div><b>似顔絵</b><small>「その子に見えるか」を確認</small></div>
+      <div class="frame"><div class="pic"><img src="assets/nigaoe.webp" alt="似顔絵の見本（テスターさんの子）"></div><b>似顔絵</b><small>「その子に見えるか」を確認</small></div>
       <svg class="arrow" viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 10c10-6 20 6 34 0M30 4l6 6-6 6"/></svg>
       <div class="frame"><div class="pic"><img src="assets/s01.webp" alt="動くスタンプの見本"></div><b>動くスタンプ</b><small>24個＋メイン1つ</small></div>
     </div>
@@ -208,8 +208,9 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 0 90px}
   <div class="wrap">
     <p class="kicker">動きをえらぶ</p>
     <h2 class="ehon">動きは、40〜60個の候補から選ぶだけ</h2>
-    <p class="lead">動きを一から考える必要はありません。こちらで用意した40〜60個ほどの候補から、使いたい24個と、メインにする1つを選んでいただきます。選んだ結果はサーバーに送られず、内容をコピーして公式LINEのトークに貼るだけです。</p>
-    <div class="shelf" aria-label="候補から選ぶ画面のイメージ（見本：パステル三毛）">
+    <p class="lead">動きを一から考える必要はありません。動きは、ねこしっぽ堂が作った40〜60個ほどの候補から、使いたい24個と、メインにする1つを選んでいただきます。選んだ結果はサーバーに送られず、内容をコピーして公式LINEのトークに貼るだけです。</p>
+    <p class="lead" style="font-size:14px">候補にない動きは、2個までリクエストいただけます（プランの料金に含みます）。3個目からは1個1,000円です。動きをすべて一からお作りするご注文は、お受けしていません。</p>
+    <div class="shelf" aria-label="候補から選ぶ画面のイメージ（見本：テスターさんの子）">
       <div class="cell on"><img src="assets/s01.webp" alt=""></div><div class="cell"><img src="assets/s03.webp" alt=""></div>
       <div class="cell on"><img src="assets/s05.webp" alt=""></div><div class="cell on"><img src="assets/s06.webp" alt=""></div>
       <div class="cell"><img src="assets/s08.webp" alt=""></div><div class="cell on"><img src="assets/s10.webp" alt=""></div>
@@ -258,6 +259,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 0 90px}
     <details open><summary>本当にお写真の子に似ますか？</summary><p>毛色や柄はお写真をそのまま絵にし、似顔絵で「その子に見えるか」を確かめていただいてから動きを作ります。</p></details>
     <details><summary>送ったお写真は公開されますか？</summary><p>お写真はスタンプづくりにだけ使い、写真そのものは公開しません。</p></details>
     <details><summary>自分だけで使いたいです</summary><p>「おうち専用」（専用プラン）なら、LINE STORE/ショップ非公開で購入URLをお渡しし、ストアにもSNSにも出しません。</p></details>
+    <details><summary>好きな動きを頼めますか？</summary><p>動きは、ねこしっぽ堂が作った候補の中から選んでいただきます。候補にない動きは2個までリクエストいただけます（プランの料金に含みます）。3個目からは1個1,000円です。動きをすべて一からお作りするご注文は、お受けしていません。</p></details>
     <details><summary>公開プランのスタンプが売れたら、売上はどうなりますか？</summary><p>「LINEストアでデビュー」（公開プラン）のスタンプは、ねこしっぽ堂の名前でLINEストアに並べます。ストアでの売上は、ねこしっぽ堂の収益になります。</p></details>
     <details><summary>犬でも頼めますか？</summary><p>いまは猫だけが対象です。</p></details>
     <div class="caution" style="margin-top:34px">
@@ -266,8 +268,9 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 0 90px}
         <li>受付はまだ始まっていません。受付開始とモニター募集は、公式LINEで最初にご案内します</li>
         <li>候補から24個を選んでいただいてから、10日以内にお作りしてLINEへ申請します（その後、LINEの審査があります）</li>
         <li>お写真をいただいてキャラクターシートを作り始めた後は、ご返金はいたしかねます</li>
+        <li>動きは、ねこしっぽ堂が作った候補から選んでいただきます。候補にない動きのリクエストは2個まで料金に含み、3個目から1個1,000円です</li>
         <li>お支払い方法は、受付開始のときにお知らせします</li>
-        <li>ページ内の見本は、ねこしっぽ堂の自社作品「パステル三毛」です</li>
+        <li>ページ内の見本は、テスターさんのお写真から作った子です（お写真そのものは載せていません）</li>
       </ul>
     </div>
   </div>
